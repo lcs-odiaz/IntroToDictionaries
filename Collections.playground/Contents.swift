@@ -1,5 +1,3 @@
-//: # Collection Types
-//: This is required code, please do not remove.
 import Foundation
 
 /*:
@@ -27,6 +25,7 @@ import Foundation
  Try that code now.
  */
 // Create the emptry shopping list
+var shoppingList : [String] = []
 
 
 
@@ -42,12 +41,13 @@ import Foundation
  Try that code now.
  */
 // Add the first item to the shopping list
-
+shoppingList.append("Six Eggs")
 
 /*:
  Now add the remaining four items to the shopping list from the example shown above.
  */
 // Add the remaining items to the shopping list
+shoppingList += ["peanut butter","Paint","chia seeds","water hose"]
 
 
 /*:
@@ -74,7 +74,7 @@ import Foundation
  */
 // Complete the exercises here
 
-
+var fiveLetters = Array(repeating: "A", count: 5)
 
 /*:
  ## Intro to Collections
@@ -102,7 +102,11 @@ import Foundation
  Try creating this dictionary now.
  */
 // Create a dictionary to connect airport codes to airport names
-
+var airports : [String : String] = [:]
+airports["YYZ"] = "Toronto Airport"
+airports["LHR"] = "London Heathrow"
+airports["DUB"] = "Dublin Airport"
+print(airports)
 
 /*:
  **NOTE**
@@ -118,7 +122,8 @@ import Foundation
  Why did we get a *nil* value for the key ``AMS``?
 
  */
-
+print(airports["AMS"])
+print(airports["LHR"])// use this error for learining goal 5 in software development
 /*:
  #### Applications for dictionaries
  
